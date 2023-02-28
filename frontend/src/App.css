@@ -1,0 +1,50 @@
+.add-ingatlan-form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-ingatlan-form-title {
+  margin-top: 0;
+  }
+  
+  .add-ingatlan-form-label {
+  display: block;
+  margin-bottom: 10px;
+  }
+  
+  .add-ingatlan-form-input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  }
+  
+  .add-ingatlan-form-checkbox-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  }
+  
+  .add-ingatlan-form-checkbox {
+  display: inline-block;
+  margin-right: 10px;
+  }
+  
+  .add-ingatlan-form-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
+  .add-ingatlan-form-button:hover {
+  background-color: #0069d9;
+  }
