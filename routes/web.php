@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IngatlanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,9 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+//Ingatlanok
+Route::get('/ingatlanok', [IngatlanController::class, 'index']);
+    Route::post('/new-ingatlan', [IngatlanController::class, 'store']);
+    Route::post('/delete-ingatlan', [IngatlanController::class, 'destroy']);
+

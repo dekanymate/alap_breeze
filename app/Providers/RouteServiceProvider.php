@@ -49,4 +49,16 @@ class RouteServiceProvider extends ServiceProvider
             return Limit::perMinute(60)->by($request->user()?->id ?: $request->ip());
         });
     }
+
+    public function mapApiRoutes(){
+        Route::group([
+            'middleware' => ['api', 'cors'],
+            'namespace' => $this->namespace,
+            'prefix' => 'api',
+        ], function ($router) {
+            Route::get('/ingatlanok', [IngatlanController::class, 'index']);
+            Route::post('/new-ingatlan', [IngatlanController::class, 'store']);
+            Route::post('/delete-ingatlan', [IngatlanController::class, 'destroy']);
+        });
+    }
 }
