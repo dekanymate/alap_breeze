@@ -8,8 +8,8 @@ export default {
     allIngatlanok() {
         return httpClient.get('/ingatlanok');
     },
-    ujIngatlan() {
-        return httpClient.post('/new-ingatlan');
+    ujIngatlan(ingatlan) {
+        return httpClient.post('/new-ingatlan', ingatlan);
     },
     deleteIngatlanok() {
         return httpClient.delete('/delete-ingatlan');
